@@ -91,11 +91,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn_light.setOnClickListener(View.OnClickListener {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 
         })
-        btn_light.setOnClickListener(View.OnClickListener {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        btn_dark.setOnClickListener(View.OnClickListener {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         })
     }
