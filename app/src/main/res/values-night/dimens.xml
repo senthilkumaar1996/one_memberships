@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="mini_space">5dp</dimen>
+    <dimen name="small_space">9dp</dimen>
+    <dimen name="medium_space">18dp</dimen>
+    <dimen name="big_space">36dp</dimen>
+
+    <dimen name="textsize_standard">16sp</dimen>
+    <dimen name="textsize_rubrik">12sp</dimen>
+    <dimen name="extra_line_space">4dp</dimen>
+
+
+
+</resources>

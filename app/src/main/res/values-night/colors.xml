@@ -9,9 +9,9 @@
     <color name="primaryColorDark_blue">#1976D2</color>
     <color name="primaryAccent_blue">#E3F2FD</color>
 
-    <color name="mainText">#2D313D</color>
+    <color name="mainText">#ffffff</color>
     <color name="textAlt">#8D8F97</color>
 
-    <color name="mainBackground">#D3D3D3</color>
+    <color name="mainBackground">#000000</color>
 
 </resources>

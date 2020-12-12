@@ -1,18 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bgonemembershipd"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/lineyarlayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/onemembershiplogo" />
+
+        <!-- Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70sp"
+            >
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/mainBackground"
+                android:textColorHighlight="@color/mainBackground"
+                android:textColorHint="@color/mainBackground"
+                android:textColorLink="@color/mainBackground"
+                android:textCursorDrawable="@color/mainBackground"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29sp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Passwort"
+                android:inputType="textPassword"
+                android:textColor="@color/mainBackground"
+                android:textColorHighlight="@color/mainBackground"
+                android:textColorHint="@color/mainBackground"
+                android:textColorLink="@color/mainBackground"
+                android:textCursorDrawable="@color/mainBackground"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="63sp"
+            android:layout_marginBottom="14dp"
+            android:padding="12dp"
+            android:textColor="@color/mainBackground"
+            android:background="@drawable/switch_btn_bg"
+            android:text="EINLOGGEN" />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dark"
+        android:background="@drawable/button_border"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:padding="12dp"
+        android:text="DARk THEME" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_light"
+        android:layout_width="187dp"
+        android:layout_height="63dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:padding="12dp"
+        android:text="LIGHT THEME"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button_border_light" />
+</RelativeLayout>
