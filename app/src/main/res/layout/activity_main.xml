@@ -83,7 +83,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_dark"
         android:background="@drawable/button_border"
-        android:layout_width="187dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginLeft="10dp"
         android:layout_alignParentBottom="true"
@@ -93,12 +93,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_light"
-        android:layout_width="187dp"
+        android:layout_width="wrap_content"
         android:layout_height="63dp"
         android:layout_marginRight="10dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
         android:padding="12dp"
         android:text="LIGHT THEME"
         android:textColor="@color/colorPrimaryDark"
